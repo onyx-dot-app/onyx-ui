@@ -6,6 +6,13 @@
   "devDependencies": {
     "@types/bun": "latest",
     "@types/react": "^19.1.13",
+    "@typescript-eslint/eslint-plugin": "^8.43.0",
+    "@typescript-eslint/parser": "^8.43.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "husky": "^9.1.7",
+    "prettier": "^3.6.2",
     "tsup": "^8.5.0"
   },
   "peerDependencies": {
@@ -13,5 +20,14 @@
   },
   "dependencies": {
     "react": "^19.1.1"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "format:fix": "prettier --write . && eslint . --ext .ts,.tsx,.js,.jsx --fix",
+    "test": "bun test"
   }
 }
