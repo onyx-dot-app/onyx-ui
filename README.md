@@ -11,7 +11,7 @@ Add this to your `package.json` file:
 {
   // ...
   "dependencies": {
-    "onyx-ui": "github:onyx-dot-app/onyx-ui"
-  }
+    "onyx-ui": "github:onyx-dot-app/onyx-ui",
+  },
 }
 ```
