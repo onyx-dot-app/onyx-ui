@@ -7,7 +7,7 @@ The unified Onyx UI Component library.
 This package will not be hosted on a public registry, but rather only through Onyx's open source repository on GitHub.
 Add this to your `package.json` file:
 
-```json
+```jsonc
 {
   // ...
   "dependencies": {
