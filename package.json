@@ -1,8 +1,12 @@
 {
   "name": "onyx-ui",
-  "module": "index.ts",
+  "version": "1.0.0",
+  "description": "The unified Onyx UI Component library",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "types": "src/index.ts",
   "type": "module",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
     "@types/bun": "latest",
