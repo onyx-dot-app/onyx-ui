@@ -9,7 +9,10 @@ import CloudSvg from "@assets/icons/cloud.svg";
 import CodeSvg from "@assets/icons/code.svg";
 import CpuSvg from "@assets/icons/cpu.svg";
 import DevKitSvg from "@assets/icons/dev-kit.svg";
+import EditBigSvg from "@assets/icons/edit-big.svg";
 import FileTextSvg from "@assets/icons/file-text.svg";
+import FolderSvg from "@assets/icons/folder.svg";
+import FolderPlusSvg from "@assets/icons/folder-plus.svg";
 import GlobeSvg from "@assets/icons/globe.svg";
 import HardDriveSvg from "@assets/icons/hard-drive.svg";
 import HeadsetMicSvg from "@assets/icons/headset-mic.svg";
@@ -17,6 +20,7 @@ import HourglassSvg from "@assets/icons/hourglass.svg";
 import ImageSvg from "@assets/icons/image.svg";
 import LightbulbSimpleSvg from "@assets/icons/lightbulb-simple.svg";
 import LineChartUpSvg from "@assets/icons/line-chart-up.svg";
+import MoreHorizontalSvg from "@assets/icons/more-horizontal.svg";
 import IntegrationsSvg from "@assets/icons/linked-dots.svg";
 import LockSvg from "@assets/icons/lock.svg";
 import MenuSvg from "@assets/icons/menu.svg";
@@ -176,4 +180,20 @@ export function ArrowUpRightIcon({ className }: IconProps) {
 
 export function WorkflowIcon({ className }: IconProps) {
   return <WorkflowSvg className={`stroke-black ${className}`} />;
+}
+
+export function FolderIcon({ className }: IconProps) {
+  return <FolderSvg className={`stroke-black ${className}`} />;
+}
+
+export function MoreHorizontalIcon({ className }: IconProps) {
+  return <MoreHorizontalSvg className={`stroke-black ${className}`} />;
+}
+
+export function EditBigIcon({ className }: IconProps) {
+  return <EditBigSvg className={`stroke-black ${className}`} />;
+}
+
+export function FolderPlusIcon({ className }: IconProps) {
+  return <FolderPlusSvg className={`stroke-black ${className}`} />;
 }
