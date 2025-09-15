@@ -2,23 +2,6 @@
   "name": "onyx-ui",
   "version": "1.0.0",
   "description": "The unified Onyx UI Component library",
-  "main": "src/index.ts",
-  "module": "src/index.ts",
-  "types": "src/index.ts",
-  "type": "module",
-  "private": false,
-  "exports": {
-    "icons": {
-      "import": "src/icons.tsx",
-      "require": "src/icons.tsx",
-      "types": "src/icons.tsx"
-    },
-    "Text": {
-      "import": "src/Text/index.tsx",
-      "require": "src/Text/index.tsx",
-      "types": "src/Text/index.tsx"
-    }
-  },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
     "@types/bun": "latest",
