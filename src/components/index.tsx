@@ -1,1 +1,1 @@
-export * from "@src/components/Text";
+export * from "./Text";
