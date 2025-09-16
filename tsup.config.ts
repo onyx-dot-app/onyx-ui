@@ -3,11 +3,12 @@ import * as path from "path";
 import * as fs from "fs";
 
 export default defineConfig({
-  entry: {
-    index: "src/index.tsx",
-    components: "src/components/index.tsx",
-    icons: "src/icons/index.tsx",
-  },
+  entry: [
+    "index.tsx",
+    "src/index.tsx",
+    "src/components/index.tsx",
+    "src/icons/index.tsx",
+  ],
   format: ["esm", "cjs"],
   dts: true,
   splitting: false,
