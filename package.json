@@ -2,6 +2,7 @@
   "name": "onyx-ui",
   "version": "1.0.0",
   "description": "The unified Onyx UI Component library",
+  "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
