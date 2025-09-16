@@ -1,6 +1,6 @@
 import { defineConfig } from "tsup";
-import { build as esbuild } from "esbuild";
 import * as path from "path";
+import * as fs from "fs";
 
 export default defineConfig({
   entry: ["src/index.tsx", "src/icons/index.tsx", "src/components/index.tsx"],
@@ -18,7 +18,7 @@ export default defineConfig({
           if (args.path.startsWith("@assets/")) {
             const newPath = path.join(
               process.cwd(),
-              "src",
+              "assets",
               args.path.replace("@assets/", "")
             );
             return { path: newPath };
@@ -28,12 +28,17 @@ export default defineConfig({
 
         build.onLoad({ filter: /\.svg$/ }, async args => {
           const { transform } = await import("@svgr/core");
-          const svg = await require("fs").promises.readFile(args.path, "utf8");
+          const svg = fs.readFileSync(args.path, "utf8");
           const result = await transform(
             svg,
             {
               jsxRuntime: "automatic",
               typescript: true,
+              exportType: "default",
+              svgProps: {
+                width: "{props.width || '1em'}",
+                height: "{props.height || '1em'}",
+              },
             },
             { componentName: "SvgComponent" }
           );
