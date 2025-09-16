@@ -3,12 +3,16 @@ import * as path from "path";
 import * as fs from "fs";
 
 export default defineConfig({
-  entry: ["src/index.tsx", "src/icons/index.tsx", "src/components/index.tsx"],
+  entry: {
+    components: "src/components/index.tsx",
+    icons: "src/icons/index.tsx",
+  },
   format: ["esm", "cjs"],
   dts: true,
-  splitting: true,
+  splitting: false,
   sourcemap: true,
   clean: true,
+  outDir: "dist",
   // Add custom esbuild plugin to handle SVG files
   esbuildPlugins: [
     {
