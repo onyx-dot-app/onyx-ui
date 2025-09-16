@@ -1,21 +1,21 @@
-# #!/bin/sh
+#!/bin/sh
 
-# echo "🔍 Running pre-commit checks..."
+echo "🔍 Running pre-commit checks..."
 
-# # Run ESLint
-# echo "📝 Running ESLint..."
-# bun run lint
-# if [ $? -ne 0 ]; then
-#   echo "❌ ESLint failed. Please fix the linting errors before committing."
-#   exit 1
-# fi
+# Run ESLint
+echo "📝 Running ESLint..."
+bun run lint
+if [ $? -ne 0 ]; then
+  echo "❌ ESLint failed. Please fix the linting errors before committing."
+  exit 1
+fi
 
-# # Run Prettier check
-# echo "🎨 Running Prettier check..."
-# bun run prettier
-# if [ $? -ne 0 ]; then
-#   echo "❌ Prettier check failed. Please run 'bun run prettier:fix' to fix formatting issues."
-#   exit 1
-# fi
+# Run Prettier check
+echo "🎨 Running Prettier check..."
+bun run prettier
+if [ $? -ne 0 ]; then
+  echo "❌ Prettier check failed. Please run 'bun run prettier:fix' to fix formatting issues."
+  exit 1
+fi
 
-# echo "✅ All pre-commit checks passed!"
+echo "✅ All pre-commit checks passed!"
