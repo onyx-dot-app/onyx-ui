@@ -1,6 +1,7 @@
 # dependencies (bun install)
 node_modules
 bun.lock
+dist
 
 # dotenv environment variable files
 .env
