@@ -3,24 +3,14 @@
   "version": "1.0.0",
   "description": "The unified Onyx UI Component library",
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
-    },
-    "./icons": {
-      "types": "./dist/icons.d.ts",
-      "import": "./dist/icons.mjs",
-      "require": "./dist/icons.js"
-    },
-    "./text": {
-      "types": "./dist/text.d.ts",
-      "import": "./dist/text.mjs",
-      "require": "./dist/text.js"
     }
   },
   "files": [
