@@ -1,19 +1,11 @@
+// tsup.config.ts
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: {
-    index: "src/index.ts",
-    icons: "src/icons.tsx",
-    text: "src/Text/index.tsx",
-  },
-  format: ["cjs", "esm"],
+  entry: ["src/index.tsx", "src/icons/index.tsx", "src/components/index.tsx"],
+  format: ["esm", "cjs"],
   dts: true,
-  splitting: false,
+  splitting: true,
   sourcemap: true,
   clean: true,
-  external: ["react"],
-  treeshake: true,
-  esbuildOptions(options) {
-    options.jsx = "automatic";
-  },
 });
